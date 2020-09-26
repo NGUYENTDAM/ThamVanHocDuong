@@ -13,7 +13,7 @@
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top"
-    style="background-color:aquamarine;font-size: 0.5cm;font-weight: bold; max-height: 110px;">
+    style="background-color:#c9eff7;font-size: 0.5cm;font-weight: bold; max-height: 110px;">
     <div class="container">
       <div>
         <div class="logo">
@@ -45,14 +45,26 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/TamNhinSuMenh">Tầm nhìn sứ mệnh</a>
               <a class="dropdown-item" href="/LinhVucHoatDong">Lĩnh vực hoạt động</a>
-              <a class="dropdown-item" href="/tintuc">Tin Tức</a>
+              <a class="dropdown-item" href="/doingu">Đội ngũ chuyên gia</a>
               <a class="dropdown-item" href="/cauhoithuonggap">Câu hỏi thường gặp</a>
               {{!-- <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div> --}}
+              <a class="dropdown-item" href="#">Something else here</a>--}}
+            </div> 
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/DichVuTamLy">Dịch vụ tâm lý</a>
+          <li class="nav-item dropdown">
+            {{!-- <a class="nav-link" href="/DichVuTamLy">Dịch vụ tâm lý</a> --}}
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dịch vụ tâm lý
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/thamvan">Tham vấn - tư vấn tâm lý</a>
+              <a class="dropdown-item" href="/giaoduc">Giáo dục kỹ năng sống</a>
+            </div> 
+
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/tintuc">Tin Tức</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Liên hệ</a>

@@ -28,7 +28,7 @@ app.use(function (req, res) {
   res.render('404', { layout: false });
 })
 
-const PORT = 3000;
-app.listen(PORT, function () {
-  console.log(`Server is running at http://localhost:${PORT}`);
+const PT = 3000;
+app.listen(process.env.PORT||PT, function () {
+  console.log(`Server is running at http://localhost:${PT}`);
 })

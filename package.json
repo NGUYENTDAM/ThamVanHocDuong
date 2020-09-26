@@ -1,6 +1,7 @@
 {
   "name": "src-express",
   "version": "1.0.0",
+  "homepage": "http://thamvanhocduong.tk/",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,6 +15,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
     "express-handlebars-sections": "^1.0.1",
+    "gh-pages": "^3.1.0",
     "mysql": "^2.18.1"
   }
 }

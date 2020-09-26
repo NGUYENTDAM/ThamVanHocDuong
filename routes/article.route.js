@@ -24,6 +24,15 @@ router.get('/DichVuTamLy', function (req, res) {
 router.get('/TamNhinSuMenh', function (req, res) {
   res.render('vwArticles/TamNhinSuMenh');
 })
+router.get('/doingu', function (req, res) {
+  res.render('vwArticles/doingu');
+})
+router.get('/giaoduc', function (req, res) {
+  res.render('vwArticles/giaoduc');
+})
+router.get('/thamvan', function (req, res) {
+  res.render('vwArticles/thamvan');
+})
 
 
 

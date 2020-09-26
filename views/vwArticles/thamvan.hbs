@@ -1,0 +1,211 @@
+{{#section 'css'}}
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+{{/section}}
+{{#section 'js'}}
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+{{/section}}
+
+<div class="tab">
+  <button style="color: blue;" class="tablinks" id="defaultOpen" onclick="openCity(event, 'London')">Giới Thiệu</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Lịch Làm Việc</button>
+</div>
+
+<div id="London" class="tabcontent">
+   <div class="container">
+
+    <div class="row" style="width: 155%;">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 style="color: navy;">Giới thiệu</h3>
+            <p class="card-text">Nhằm nâng cao chất lượng học tập và hỗ trợ, cũng như tạo môi trường học tập thoải mái và thân thiện, giúp các học sinh phát triển toàn diện cả về kiến thức, kĩ năng cũng như sức khỏe tinh thần, Phòng Tham Vấn Học Đường 
+                chính thức mở Dịch vụ Tham vấn tâm lý học đường bắt đầu từ ngày 20/10/2020.<br>
+              Với tất cả học sinh, môi trường học ở THPT là một sự thay đổi mới mẻ về nhận thức, thái độ, kỹ năng…Với những thử thách, trải nghiệm thú vị, những khó khăn và đôi lúc cả sự mệt mỏi, chán nản ở độ tuổi đầu thanh niên. Đây là giai đoạn các bạn luôn trăn trở những câu hỏi về cuộc sống, về con người bạn mong muốn trở thành  trong tương lai, những câu hỏi ở lĩnh vực nghề nghiệp…. Tham vấn tâm lý là lắng nghe và cùng chia sẻ những tâm tư, tình cảm của các bạn, cùng đồng hành và giúp các bạn ứng phó với những vấn đề khó khăn trong học tập, mối quan hệ gia đình, bạn bè, 
+              tình yêu học trò và cuộc sống cũng như định hướng nghề nghiệp sau này.<br>
+              <h3 style="color: navy;">Trợ giúp những vấn đề mà các bạn học sinh THPT thường gặp phải như:</h3>
+              - Trầm cảm, lo âu, stress, ám ảnh, khủng hoảng...<br>
+            - Khó khăn trong định hướng nghề nghiệp<br>
+            - Áp lực học tập, khó tập trung, bạo lực học đường<br>
+            - Tư vấn về tình yêu, tình bạn, về giới tính, nhận thức bản thân<br>
+            - Khó khăn trong các mối quan hệ gia đình và xã hội<br>
+            - Những băn khoăn, lo lắng, phiền muộn khác…<br>
+            <div style="margin:2% 0 5% 25%;">
+                <img src="https://gocnhintamlyhoc.files.wordpress.com/2017/05/images.png?w=511&h=396" style="width: 500px;height: 400px;" />
+            </div>
+            Dịch vụ này<b> HOÀN TOÀN MIỄN PHÍ</b>  dành cho tất cả học sinh Trường THPT Nghèn. Mỗi buổi Tham vấn – Tư vấn khoảng 45-60 phút hoặc hơn tùy vào vấn đề mà bạn gặp phải, 
+            các bạn có thể đăng ký qua email hoặc gặp trực tiếp cho chuyên gia tham vấn tại phòng A11.<br>
+            Tại đây các bạn có thể tự do chia sẻ mọi suy nghĩ, tâm tư của mình, những câu chuyện, những vấn đề gây cho bạn những xáo trộn trong suy nghĩ, 
+            cảm xúc, hành vi mà không bị phán xét và được <b>đảm bảo tối đa về giữ bí mật</b><br>
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div class="container">
+
+    <div class="row" style="width: 155%;">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <p class="card-text">
+            <h3 style="color: navy;">Tham vấn-Tư vấn tâm lý trực tiếp tại trường</h3>
+            Đối tượng: Tất cả học sinh có các vấn đề về tâm lý – quan hệ tình cảm - gia đình, bạn bè…<br>
+            - Làm việc : Tất cả các ngày trong tuần .<br>
+            - Giờ làm việc: 8g00 – 11g00. Chiều từ 14h-17g00<br>
+            <h3 style="color: navy;">Tham vấn-Tư vấn cá nhân:</h3>
+            Ca 1: 08h00 - 9h00 - Ca 2: 09h00 - 10h00<br>
+            Ca 3: 10h00 - 11h00 - Ca 4: 14h00 - 15h00 Ca 5: 16h00 - 17h00<br>
+            <h3 style="color: navy;">Tham vấn-Tư vấn nhóm:</h3>
+            Tuần 2 buổi chiều thứ 2- thứ4 <br>
+            Ca 1: 08h00 - 9h00 - Ca 2: 09h00 - 10h00  <br>
+            Ca 3: 10h00 - 11h00 - Ca 4: 14h00 - 15h00    Ca 5: 16h00 - 17h00 <br>
+            Mỗi nhóm chỉ từ 2 - 5 em với Giáo viên - chuyên gia tâm lý và  Bác sĩ  hỗ trợ chuyên môn.
+            
+            <h3 style="color: navy;">Các lớp tham vấn- tư vấn cho phụ huynh có học sinh rối nhiễu tâm lý</h3> 
+            Đối tượng: Phụ huynh có con em đang là học sinh tại trường THPT Nghèn và phụ huynh có nhu cầu chăm sóc con tại gia đình.<br>
+            Lịch học: Học chiều Thứ Sáu <br>
+            Khóa tư vấn ngắn hạn: Một Tháng ( 4 buổi ) <br>
+            <h3 style="color: navy;">Mọi chi tiết xin liên hệ:</h3>
+            Trung tâm tham vấn – Tư vấn học đường / Phòng A11, Trường THPT Nghèn. Khối 6, Thị trấn Nghèn, Can lộc, Hà Tĩnh <br>
+            Hotline: 0981.187.341 - 0393.845.567<br>
+            Fb: https://www.facebook.com/groups/1013170969148396<br>
+            Email: ThamvanhocduongA11@gmail.com<br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+        <!-- Categories Widget -->
+        {{!-- <div class="card my-4">
+          <h5 class="card-header">Categories</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">Freebies</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">Tutorials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> --}}
+
+        <!-- Side Widget -->
+        {{!-- <div class="card my-4">
+          <h5 class="card-header">Side Widget</h5>
+          <div class="card-body">
+            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+          </div>
+        </div> --}}
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div> 
+</div>
+
+
+ <!-- Page Content -->
+ 
+  <!-- /.container -->
